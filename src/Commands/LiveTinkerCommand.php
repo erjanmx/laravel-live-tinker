@@ -41,7 +41,7 @@ class LiveTinkerCommand extends Command
             // using shell_exec to get code's live state
             $output = shell_exec("php artisan live-tinker '$data'");
 
-            $connection->send($output);
+            $connection->send($output ?? '');
         };
 
         $server->addRoot('127.0.0.1:2345', 'laravel-live-tinker/public');
