@@ -37,6 +37,15 @@
             height: 25px;
             left: 0;
         }
+
+        #run-selected {
+            margin: 0;
+            position: absolute;
+            top: 51%;
+            width: 120px;
+            height: 25px;
+            left: 15%;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +67,8 @@ echo $output;
 
 </div>
 <textarea id="editor-result"></textarea>
-<button id="run" onclick="send()">Run</button>
+<button id="run" onclick="send(editor.getValue())">Run</button>
+<button id="run-selected" onclick="send(editor.getSelectedText())">Run selected</button>
 
 
 <script src="assets/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
@@ -72,8 +82,9 @@ echo $output;
         document.getElementById('editor-result').innerHTML = data.data;
     };
 
-    function send() {
-        socket.send(editor.getValue())
+    function send(text) {
+        // console.log(editor.getSelectedText());
+        socket.send(text)
     }
 </script>
 
