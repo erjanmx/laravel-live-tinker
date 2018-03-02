@@ -13,21 +13,53 @@
             margin: 0;
             position: absolute;
             top: 0;
-            bottom: 0;
+            bottom: 50%;
             left: 0;
             right: 0;
+        }
+
+        #editor-result {
+            margin: 0;
+            position: absolute;
+            top: 55%;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #run {
+            margin: 0;
+            position: absolute;
+            top: 51%;
+            width: 120px;
+            height: 25px;
+            left: 0;
         }
     </style>
 </head>
 <body>
 
-<pre id="editor">
-$users = App\User::all();
-
-foreach($users as $user) {
-    echo $user->name;
+<div id="editor">
+function nfact($n) {
+    if ($n == 0) {
+        return 1;
+    }
+    else {
+        return $n * nfact($n - 1);
+    }
 }
-</pre>
+
+$num = 10;
+
+$output = "\n\nFactorial " . $num . " = " . nfact($num) . "\n\n";
+echo $output;
+
+</div>
+<textarea id="editor-result"></textarea>
+<button id="run" onclick="send()">Run</button>
+
 
 <script src="assets/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
@@ -37,12 +69,12 @@ foreach($users as $user) {
     editor.session.setMode({path: "ace/mode/php", inline: true});
 
     socket.onmessage = function (data) {
-        console.log(data.data);
+        document.getElementById('editor-result').innerHTML = data.data;
     };
 
-    editor.on("copy", function(text) {
+    function send() {
         socket.send(editor.getValue())
-    })
+    }
 </script>
 
 </body>
