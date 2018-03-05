@@ -1,0 +1,43 @@
+#editor {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+}
+
+#extra {
+    margin: 0;
+    position: absolute;
+    top: 51%;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 16px;
+    word-wrap: break-word;
+    font-family: Source Code Pro,'Courier New';
+}
+
+#editor-result {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    word-wrap: break-word;
+    font-family: Source Code Pro,'Courier New';
+    background: #ebf8f2;
+}
+
+.run-buttons {
+    font-size: large;
+    font-family: inherit;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
