@@ -28,7 +28,7 @@ class LiveTinkerCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Test your code live in your project environment';
 
     /**
      * Create a new command instance.
@@ -61,6 +61,7 @@ class LiveTinkerCommand extends Command
 
         $server->addRoot("{$this->webServerIp}:{$this->webServerPort}", 'laravel-live-tinker/public');
 
+        $this->info("Server is started on {$this->webServerIp}:{$this->webServerPort}");
         Worker::runAll();
     }
 
