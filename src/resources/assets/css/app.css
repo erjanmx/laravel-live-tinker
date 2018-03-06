@@ -30,8 +30,17 @@
 }
 
 .run-buttons {
-    font-size: large;
     font-family: inherit;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #e7e7e7;
+    color: black;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 pre {
@@ -39,4 +48,9 @@ pre {
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.row {
+    float: left;
+    margin-left: 1px;
 }

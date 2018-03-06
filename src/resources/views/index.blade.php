@@ -9,10 +9,10 @@
 <div id="editor"></div>
 <div id="extra">
     <div id="run">
-        <div style="float: left; margin-left: 1px">
+        <div class="row">
             <button class="run-buttons" onclick="sendCode(editor.getValue())">Run</button>
         </div>
-        <div style="float: left; margin-left: 1px">
+        <div class="row">
             <button class="run-buttons" onclick="sendCode(editor.getSelectedText())">Run selected</button>
         </div>
     </div>
