@@ -11,24 +11,20 @@
 #extra {
     margin: 0;
     position: absolute;
-    top: 51%;
-    bottom: 100%;
+    top: 50%;
     left: 0;
     right: 0;
     width: 100%;
+    height: 50%;
     font-size: 16px;
     word-wrap: break-word;
-    font-family: Source Code Pro,'Courier New';
 }
 
 #editor-result {
     width: 100%;
     font-size: 16px;
-    padding: 5px;
     word-wrap: break-word;
-    font-family: Source Code Pro,'Courier New';
-    overflow-y: scroll;
-    height: 400px;
+    height: 85%;
 }
 
 .run-buttons {
@@ -40,7 +36,7 @@
     display: inline-block;
     background-color: #e7e7e7;
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
 }
