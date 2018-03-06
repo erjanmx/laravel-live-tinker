@@ -1,7 +1,11 @@
 {
     "name": "erjanmx/laravel-live-tinker",
-    "description": "",
+    "description": "Live tinker allows you to live interact with your Laravel application from the web page",
     "keywords": [
+        "laravel",
+        "tinker",
+        "live-laravel",
+        "tinker-web"
     ],
     "homepage": "https://github.com/erjanmx/laravel-live-tinker",
     "license": "MIT",
