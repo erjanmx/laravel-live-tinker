@@ -1,6 +1,6 @@
 <?php
 
-namespace Erjanmx\LiveTinker\src\Controllers;
+namespace Erjanmx\LiveTinker\Controllers;
 
 
 use Illuminate\Http\Request;
@@ -15,16 +15,6 @@ class LiveTinkerController extends Controller
 
     public function ajax(Request $request)
     {
-        $code = $request->post('code');
-
-        ob_start();
-
-        try {
-            echo eval($code);
-        } catch (\Throwable $e) {
-            echo $e->getMessage() . PHP_EOL . $e->getTraceAsString();
-        }
-
-        echo ob_get_clean();
+        eval($request->post('code'));
     }
 }
