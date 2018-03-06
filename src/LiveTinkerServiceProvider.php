@@ -3,7 +3,6 @@
 namespace Erjanmx\LiveTinker;
 
 use Illuminate\Support\ServiceProvider;
-use Erjanmx\LiveTinker\Commands\LiveTinkerCommand;
 
 
 class LiveTinkerServiceProvider extends ServiceProvider
@@ -22,10 +21,16 @@ class LiveTinkerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                LiveTinkerCommand::class,
-            ]);
-        }
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'live-tinker');
+
+        $this->publishes([
+            __DIR__. '/resources/assets' => public_path('vendor/live-tinker'),
+        ], 'public');
+    }
+
+    public function register()
+    {
+        include __DIR__.'/routes.php';
+        $this->app->make('Erjanmx\LiveTinker\src\Controllers\LiveTinkerController');
     }
 }
