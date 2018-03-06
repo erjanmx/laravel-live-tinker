@@ -19,13 +19,13 @@ function sendCode(text) {
     xhr.open('POST', '/live-tinker/ajax');
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onload = function() {
-        document.getElementById('editor-result').innerHTML = xhr.responseText;
+        document.Response.document.body.innerHTML = xhr.responseText;
         changeButtonsState(false);
     };
     xhr.send(encodeURI('code=' + text));
 
     changeButtonsState(true);
-    document.getElementById('editor-result').innerHTML = '';
+    document.Response.document.body.innerHTML = '';
 }
 
 function changeButtonsState(state) {
