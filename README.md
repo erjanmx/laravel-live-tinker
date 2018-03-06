@@ -1,5 +1,5 @@
-# Laravel live tinker
-Live tinker allows you to interact with your Laravel application from the web page
+# Laravel live-tinker
+Live-tinker allows you to interact with your Laravel application from the web page
 
 [Laravel's tinker command](https://github.com/laravel/tinker) allows to run any code you want as if you are inside your Laravel app. 
 
