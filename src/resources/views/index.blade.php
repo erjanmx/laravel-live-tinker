@@ -10,10 +10,10 @@
 <div id="extra">
     <div id="run">
         <div class="row">
-            <button class="run-buttons" onclick="sendCode(editor.getValue())">Run</button>
+            <button class="run-buttons" onclick="sendCode(editor.getValue())" title="Ctrl+Enter/Cmd+Enter">Run (Ctrl+Enter)</button>
         </div>
         <div class="row">
-            <button class="run-buttons" onclick="sendCode(editor.getSelectedText())">Run selected</button>
+            <button class="run-buttons" onclick="sendCode(editor.getSelectedText())" title="Ctrl+Shift+Enter/Cmd+Shift+Enter">Run selected (Ctrl+Shift+Enter)</button>
         </div>
     </div>
     <br />
