@@ -28,6 +28,18 @@ Now just open ```http://[your-domain]/live-tinker``` (replace `your-domain` with
 
 This package uses [Ace Editor](https://github.com/ajaxorg/ace) to get php-editor in your browser
 
+## Screenshots
+
+### Work with your models 
+
+![Imgur](https://i.imgur.com/0fyjv3n.png)
+
+### Get errors with Whoops
+![Imgur](https://i.imgur.com/d2owQjr.png)
+
+### Plain PHP
+![Imgur](https://i.imgur.com/G5lwHzx.png)
+
 # Licence
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
