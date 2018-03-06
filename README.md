@@ -10,10 +10,10 @@ This package helps you to run any line of code in your Laravel app environment i
 
 ## Installation
 
-You can install the package via composer:
+You can install the package via composer (`Note: install only in your dev-environment`):
 
 ```bash
-composer require erjanmx/laravel-live-tinker
+composer require erjanmx/laravel-live-tinker --dev
 ```
 
 ## Usage
