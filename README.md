@@ -28,6 +28,17 @@ Now just open ```http://[your-domain]/live-tinker``` (replace `your-domain` with
 
 This package uses [Ace Editor](https://github.com/ajaxorg/ace) to get php-editor in your browser
 
+## Features
+
+- No dependency
+- Full Laravel environment support
+- No need to reload page on code change
+- Saves your code in local-storage (restores if browser window has restarted)
+- Run all or only part of your code
+- Quick run using keyboard commands
+- Laravel-native errors by *Whoops*
+- Test any plain PHP code
+
 ## Screenshots
 
 ### Work with your models 
