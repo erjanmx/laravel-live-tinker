@@ -22,7 +22,7 @@ function sendCode(text) {
         document.Response.document.body.innerHTML = xhr.responseText;
         changeButtonsState(false);
     };
-    xhr.send(encodeURI('code=' + text));
+    xhr.send('code=' + encodeURIComponent(text));
 
     changeButtonsState(true);
     document.Response.document.body.innerHTML = '';
