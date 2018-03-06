@@ -17,9 +17,7 @@
         </div>
     </div>
     <br />
-    <pre>
-        <div id="editor-result"></div>
-    </pre>
+    <iframe name="Response" id="editor-result"></iframe>
 </div>
 <script src="/vendor/live-tinker/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
 <script src="/vendor/live-tinker/js/app.js" type="text/javascript" charset="utf-8"></script>

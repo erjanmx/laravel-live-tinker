@@ -27,6 +27,8 @@
     padding: 5px;
     word-wrap: break-word;
     font-family: Source Code Pro,'Courier New';
+    overflow-y: scroll;
+    height: 400px;
 }
 
 .run-buttons {
