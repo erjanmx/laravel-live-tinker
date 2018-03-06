@@ -16,6 +16,12 @@ You can install the package via composer (`Note: install only in your dev-enviro
 composer require erjanmx/laravel-live-tinker --dev
 ```
 
+Publish assets via following command
+
+```bash
+php artisan vendor:publish --provider=Erjanmx\\LiveTinker\\LiveTinkerServiceProvider --tag=public
+```
+
 ## Usage
 
 If you do not have configured web-server we'll use Laravel's built-in one
@@ -35,6 +41,7 @@ This package uses [Ace Editor](https://github.com/ajaxorg/ace) to get php-editor
 - No need to reload page on code change
 - Saves your code in local-storage (restores if browser window has restarted)
 - Run all or only part of your code
+- Code highlight via (Ace Editor)
 - Quick run using keyboard commands
 - Laravel-native errors by *Whoops*
 - Test any plain PHP code
