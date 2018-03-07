@@ -1,6 +1,6 @@
 # Laravel-live-tinker
 
-Laravel-live-tinker allows you to write code and live test your Laravel application from the browser page
+Laravel-live-tinker allows you to live debug/test small parts of your Laravel application from the browser page
 
 ![Imgur](https://i.imgur.com/DRXevEn.png)
 
