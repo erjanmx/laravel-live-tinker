@@ -15,6 +15,6 @@ class LiveTinkerController extends Controller
 
     public function ajax(Request $request)
     {
-        eval($request->post('c'));
+        eval($request->input('c'));
     }
 }
