@@ -13,7 +13,9 @@ This package helps you to run any line of code in your Laravel app environment i
 
 ## Installation
 
-You can install the package via composer (`Note: install only in your dev-environment`):
+You can install the package via composer
+
+> Install only in your dev-environment
 
 ```bash
 composer require erjanmx/laravel-live-tinker --dev
@@ -33,9 +35,9 @@ If you do not have configured web-server we'll use Laravel's built-in one
 php artisan serve 
 ```
 
-Now just open ```http://[your-domain]/live-tinker``` (replace `your-domain` with your domain or `ip:port` given by `php artisan serve` command)
+Now just open http://**your-domain**/live-tinker (replace **your-domain** with your domain or `ip:port` given by `php artisan serve` command)
 
-You should see editor window with php code highlighting (powered by [Ace Editor](https://github.com/ajaxorg/ace) and the result window. Now you can type/copy any code or even whole classes and test them in your browser and everything will work as if it has been typed in tinker console command.
+You should see editor window with php code highlighting (powered by [Ace Editor](https://github.com/ajaxorg/ace)) and the result window. Now you can type/copy any code or even whole classes and test them in your browser and everything will work as if it has been typed in tinker console command.
 
 ## Features
 
