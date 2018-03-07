@@ -22,7 +22,7 @@ composer require erjanmx/laravel-live-tinker --dev
 ```
 
 > If you're using Laravel prior to version 5.5 you have to configure by adding Service Provider in your `/config/app.php`
-
+>
 > ```
 > 'providers' => [
 >     // other providers
