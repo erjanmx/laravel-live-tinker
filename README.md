@@ -1,4 +1,4 @@
-# Laravel live-tinker
+# Laravel-live-tinker
 
 Laravel-live-tinker allows you to write code and live test your Laravel application from the browser page
 
@@ -64,15 +64,17 @@ You should see editor window with php code highlighting (powered by [Ace Editor]
 ## Screenshots
 
 ### Work with your models 
-
 ![Imgur](https://i.imgur.com/0fyjv3n.png)
+
 
 ### Get errors with Whoops
 ![Imgur](https://i.imgur.com/d2owQjr.png)
 
+
 ### Plain PHP
 ![Imgur](https://i.imgur.com/G5lwHzx.png)
 
-# Licence
+
+# License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
