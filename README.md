@@ -43,7 +43,7 @@ You should see editor window with php code highlighting (powered by [Ace Editor]
 - No need to reload page on code change
 - Saves your code in local-storage (restores if browser window has restarted)
 - Run all or only part of your code
-- Code highlight via (Ace Editor)
+- Code highlight via Ace Editor
 - Quick run using keyboard commands
 - Laravel-native errors by *Whoops*
 - Test any plain PHP code
