@@ -32,7 +32,7 @@ php artisan serve
 
 Now just open ```http://[your-domain]/live-tinker``` (replace `your-domain` with your domain or `ip:port` given by `php artisan serve` command)
 
-This package uses [Ace Editor](https://github.com/ajaxorg/ace) to get php-editor in your browser
+You should see editor window with php code highlighting (powered by [Ace Editor](https://github.com/ajaxorg/ace) and the result window. Now you can type/copy any code or even whole classes and test them in your browser and everything will work as if it has been typed in tinker console command.
 
 ## Features
 
