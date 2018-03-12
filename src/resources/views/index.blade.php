@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LiveTinker</title>
+    <title>Live-tinker</title>
     <link rel="stylesheet" href="/vendor/live-tinker/css/app.css">
 </head>
 <body>
