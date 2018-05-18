@@ -30,7 +30,9 @@ class LiveTinkerServiceProvider extends ServiceProvider
 
     public function register()
     {
-        include __DIR__.'/routes.php';
-        $this->app->make('Erjanmx\LiveTinker\Controllers\LiveTinkerController');
+        if (env('APP_DEBUG')) {
+            include __DIR__.'/routes.php';
+            $this->app->make('Erjanmx\LiveTinker\Controllers\LiveTinkerController');
+        };
     }
 }
