@@ -45,6 +45,10 @@ If you do not have configured web-server we'll use Laravel's built-in one
 php artisan serve 
 ```
 
+> Note
+>
+> Due to security reasons the following route will be available in `APP_DEBUG=true` mode only, which always must be set to `false` in production
+
 Now just open http://**your-domain**/live-tinker (replace **your-domain** with your domain or `ip:port` given by `php artisan serve` command)
 
 You should see editor window with php code highlighting (powered by [Ace Editor](https://github.com/ajaxorg/ace)) and the result window. Now you can type/copy any code or even whole classes and test them in your browser and everything will work as if it has been typed in tinker console command.
